@@ -1,0 +1,23 @@
+platform :ios, '10.0'
+
+target '___PACKAGENAME___' do
+  use_frameworks!
+
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
+
+  # Uncomment this to enable unit tests target's pods
+  #target '___PACKAGENAME___Tests' do
+  #  inherit! :search_paths
+  #  pod 'RxBlocking', '~> 4.0'
+  #  pod 'RxTest',     '~> 4.0'
+  #end
+
+  # Uncomment this to enable UI tests target's pods
+  #target '___PACKAGENAME___UITests' do
+  #  inherit! :search_paths
+  #  pod 'RxBlocking', '~> 4.0'
+  #  pod 'RxTest',     '~> 4.0'
+  #end
+
+end
