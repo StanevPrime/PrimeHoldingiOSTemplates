@@ -10,7 +10,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Input {
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___Output {
-    var <#myStream#>: Driver<<#String#>> { get set }
+    var <#myStream#>: Driver<<#String#>> { get }
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___Type {
@@ -19,23 +19,23 @@ protocol ___FILEBASENAMEASIDENTIFIER___Type {
 }
 
 // MARK: - View Model Implementaion
-class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Input, ___FILEBASENAMEASIDENTIFIER___Output, ___FILEBASENAMEASIDENTIFIER___Type  {
-    //MARK: Outputs
+class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Input, ___FILEBASENAMEASIDENTIFIER___Output, ___FILEBASENAMEASIDENTIFIER___Type {
+    // MARK: Outputs
     let <#myStream#>: Driver<<#String#>>
-    
-    //MARK: Initialization
+
+    // MARK: Initialization
     init() {
         <#myStream = doSomethingSubject#>
             <#.customOperator()#>
             <#.asDriver(onErrorJustReturn: "")#>
     }
-    
-    //MARK: Inputs
+
+    // MARK: Inputs
     private let <#doSomethingSubject#> = PublishRelay<<#Void#>>()
     func <#doSomething#>() {
         <#    doSomething.accept(())#>
     }
-    
+
     // MARK: InputOutput
     var input: ___FILEBASENAMEASIDENTIFIER___Input { return self }
     var output: ___FILEBASENAMEASIDENTIFIER___Output { return self }
@@ -45,7 +45,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Input, ___FI
 /*
 fileprivate extension ObservableType where Self.E == Void {
     func customOperator() -> Observable<String> {
-        return map{ "" }
+        return map { "" }
     }
 }
 */

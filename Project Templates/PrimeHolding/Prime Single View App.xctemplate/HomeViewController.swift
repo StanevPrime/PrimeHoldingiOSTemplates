@@ -1,14 +1,20 @@
-//___FILEHEADER___
+//
+//  HomeViewController.swift
+//  SwiftLint
+//
+//  Created by Primeholding Tempate on 14.09.18.
+//  Copyright © 2018 Primeholding. All rights reserved.
+//
 
 import UIKit
 import RxSwift
 import RxCocoa
 
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
+class HomeViewController: UIViewController {
 
-    var viewModel: ___VARIABLE_viewModelName:identifier___Type!
+    var viewModel: HomeViewModelType!
     private let disposeBag = DisposeBag()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,24 +42,24 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 }
 
 // MARK: - View Model Bindings
-fileprivate extension ___VARIABLE_viewModelName:identifier___Output {
-    func bind(toViewController viewController: ___FILEBASENAMEASIDENTIFIER___) -> [Disposable] {
+fileprivate extension HomeViewModelOutput {
+    func bind(toViewController viewController: HomeViewController) -> [Disposable] {
         return [
 
         ]
     }
 }
 
-fileprivate extension ___VARIABLE_viewModelName:identifier___Input {
-    func bind(toViewController viewController: ___FILEBASENAMEASIDENTIFIER___) -> [Disposable] {
+fileprivate extension HomeViewModelInput {
+    func bind(toViewController viewController: HomeViewController) -> [Disposable] {
         return [
 
         ]
     }
 }
 
-fileprivate extension ___VARIABLE_viewModelName:identifier___Type {
-    func bind(toViewController viewController: ___FILEBASENAMEASIDENTIFIER___) -> [Disposable] {
+fileprivate extension HomeViewModelType {
+    func bind(toViewController viewController: HomeViewController) -> [Disposable] {
         return [
             input.bind(toViewController: viewController),
             output.bind(toViewController: viewController)

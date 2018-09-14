@@ -62,6 +62,20 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Note: Register above files in DI Container</string>
+			<key>Description</key>
+			<string>Note: Register above files in DI Container</string>
+			<key>Identifier</key>
+			<string>diInfo</string>
+			<key>Name</key>
+			<string>DI Container</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
 	</array>
 	<key>Platforms</key>
 	<array>

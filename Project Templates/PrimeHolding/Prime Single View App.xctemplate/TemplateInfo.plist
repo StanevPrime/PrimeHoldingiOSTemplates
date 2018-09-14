@@ -8,7 +8,6 @@
 	<string>com.primeholding.dt.unit.singleViewApplication</string>
 	<key>Ancestors</key>
 	<array>
-		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
 		<string>com.apple.dt.unit.cocoaTouchApplicationBase</string>
 	</array>
 	<key>Concrete</key>
@@ -17,32 +16,43 @@
 	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
 	<key>Nodes</key>
 	<array>
-		<string>ViewControllers/ViewController.swift:comments</string>
-		<string>ViewControllers/ViewController.swift:imports:importCocoa</string>
-		<string>ViewControllers/ViewController.swift:implementation(___FILEBASENAME___: UIViewController)</string>
-		<string>ViewControllers/ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
-		<string>ViewControllers/ViewController.swift:implementation:methods:viewDidLoad:super</string>
-		<string>ViewControllers/ViewController.swift:implementation:methods:didReceiveMemoryWarning(override func didReceiveMemoryWarning(\))</string>
-		<string>ViewControllers/ViewController.swift:implementation:methods:didReceiveMemoryWarning:super</string>
+		<string>AppDelegate.swift</string>
+		<string>ViewControllers/HomeViewController.swift</string>
+		<string>ViewModels/HomeViewModel.swift</string>
 		<string>Services/.keep</string>
-		<string>DI/.keep</string>
 		<string>Models/.keep</string>
-		<string>Views/.keep</string>
-		<string>ViewModels/.keep</string>
+		<string>Repositories/.keep</string>
+		<string>ViewModels/HomeViewModel.swift</string>
 		<string>Misc/Protocols/.keep</string>
 		<string>Misc/Extensions/.keep</string>
 		<string>Base.lproj/Main.storyboard</string>
 		<string>Info.plist:UIMainStoryboardFile</string>
 		<string>Base.lproj/LaunchScreen.storyboard</string>
+		<string>Views/Storyboard.swift</string>
 		<string>Misc/Extensions/Collection+Disposable.swift</string>
+		<string>Misc/Extensions/AppDelegate+DI.swift</string>
+		<string>Misc/Extensions/UIViewController+Storyboard.swift</string>
+		<string>Misc/Extensions/Swinject+Extensions.swift</string>
+		<string>DI/DIContainer.swift</string>
+		<string>DI/ViewModelAssembly.swift</string>
+		<string>DI/ViewControllerAssembly.swift</string>
+		<string>DI/RepositoryAssembly.swift</string>
+		<string>DI/CommonAssembly.swift</string>
+		<string>DI/ServiceAssembly.swift</string>
 		<string>../Podfile</string>
+		<string>../.swiftlint.yml</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>Info.plist:UIMainStoryboardFile</key>
-		<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
-&lt;string&gt;Main&lt;/string&gt;
-</string>
+		<key>Views/Storyboard.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Storyboard.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Views</string>
+			</array>
+		</dict>
 		<key>Misc/Extensions/Collection+Disposable.swift</key>
 		<dict>
 			<key>Path</key>
@@ -53,6 +63,94 @@
 				<string>Extensions</string>
 			</array>
 		</dict>
+		<key>Misc/Extensions/AppDelegate+DI.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate+DI.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Misc</string>
+				<string>Extensions</string>
+			</array>
+		</dict>
+		<key>Misc/Extensions/UIViewController+Storyboard.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>UIViewController+Storyboard.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Misc</string>
+				<string>Extensions</string>
+			</array>
+		</dict>
+		<key>Misc/Extensions/Swinject+Extensions.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Swinject+Extensions.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Misc</string>
+				<string>Extensions</string>
+			</array>
+		</dict>
+		<key>DI/DIContainer.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>DIContainer.swift</string>
+			<key>Group</key>
+			<array>
+				<string>DI</string>
+			</array>
+		</dict>
+		<key>DI/ViewModelAssembly.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>ViewModelAssembly.swift</string>
+			<key>Group</key>
+			<array>
+				<string>DI</string>
+			</array>
+		</dict>
+		<key>DI/ViewControllerAssembly.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>ViewControllerAssembly.swift</string>
+			<key>Group</key>
+			<array>
+				<string>DI</string>
+			</array>
+		</dict>
+		<key>DI/RepositoryAssembly.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>RepositoryAssembly.swift</string>
+			<key>Group</key>
+			<array>
+				<string>DI</string>
+			</array>
+		</dict>
+		<key>DI/CommonAssembly.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>CommonAssembly.swift</string>
+			<key>Group</key>
+			<array>
+				<string>DI</string>
+			</array>
+		</dict>
+		<key>DI/ServiceAssembly.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>ServiceAssembly.swift</string>
+			<key>Group</key>
+			<array>
+				<string>DI</string>
+			</array>
+		</dict>
+		<key>Info.plist:UIMainStoryboardFile</key>
+		<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+&lt;string&gt;Main&lt;/string&gt;
+</string>
 		<key>Base.lproj/LaunchScreen.storyboard</key>
 		<dict>
 			<key>Group</key>
@@ -77,11 +175,22 @@
 			<key>SortOrder</key>
 			<integer>99</integer>
 		</dict>
-		<key>ViewControllers/ViewController.swift</key>
+		<key>ViewControllers/HomeViewController.swift</key>
 		<dict>
+			<key>Path</key>
+			<string>HomeViewController.swift</string>
 			<key>Group</key>
 			<array>
 				<string>ViewControllers</string>
+			</array>
+		</dict>
+		<key>ViewModels/HomeViewModel.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>HomeViewModel.swift</string>
+			<key>Group</key>
+			<array>
+				<string>ViewModels</string>
 			</array>
 		</dict>
 		<key>Services/.keep</key>
@@ -91,13 +200,6 @@
 				<string>Services</string>
 			</array>
 		</dict>
-		<key>DI/.keep</key>
-		<dict>
-			<key>Group</key>
-			<array>
-				<string>DI</string>
-			</array>
-		</dict>
 		<key>Models/.keep</key>
 		<dict>
 			<key>Group</key>
@@ -105,18 +207,11 @@
 				<string>Models</string>
 			</array>
 		</dict>
-		<key>Views/.keep</key>
+		<key>Repositories/.keep</key>
 		<dict>
 			<key>Group</key>
 			<array>
-				<string>Views</string>
-			</array>
-		</dict>
-		<key>ViewModels/.keep</key>
-		<dict>
-			<key>Group</key>
-			<array>
-				<string>ViewModels</string>
+				<string>Repositories</string>
 			</array>
 		</dict>
 		<key>Misc/Protocols/.keep</key>
@@ -137,6 +232,8 @@
 		</dict>
 		<key>AppDelegate.swift</key>
 		<dict>
+			<key>Path</key>
+			<string>AppDelegate.swift</string>
 			<key>Group</key>
 			<array>
 				<string>Misc</string>
@@ -152,6 +249,17 @@
 			</array>
 			<key>Path</key>
 			<string>Podfile</string>
+		</dict>
+		<key>../.swiftlint.yml</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+			</array>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.swiftlint.yml</string>
 		</dict>
 	</dict>
 </dict>

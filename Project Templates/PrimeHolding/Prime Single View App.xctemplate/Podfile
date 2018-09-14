@@ -5,7 +5,11 @@ target '___PACKAGENAME___' do
 
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
-
+  pod 'Swinject', '~> 2.4'
+  pod 'SwinjectStoryboard', '~> 2.0'
+  pod 'SwinjectAutoregistration', '~> 2.0'
+  pod 'SwiftLint'
+  
   # Uncomment this to enable unit tests target's pods
   #target '___PACKAGENAME___Tests' do
   #  inherit! :search_paths
