@@ -17,21 +17,24 @@
 	<key>Nodes</key>
 	<array>
 		<string>AppDelegate.swift</string>
-		<string>ViewControllers/HomeViewController.swift</string>
-		<string>ViewModels/HomeViewModel.swift</string>
 		<string>Services/.keep</string>
 		<string>Models/.keep</string>
-		<string>Repositories/.keep</string>
 		<string>ViewModels/HomeViewModel.swift</string>
 		<string>Misc/Protocols/.keep</string>
 		<string>Misc/Extensions/.keep</string>
 		<string>Base.lproj/Main.storyboard</string>
 		<string>Info.plist:UIMainStoryboardFile</string>
 		<string>Base.lproj/LaunchScreen.storyboard</string>
+		<string>ViewModels/HomeViewModel.swift</string>
+		<string>ViewModels/Misc/LoadingViewModel.swift</string>
+		<string>Repositories/Utils/ApiResult.swift</string>
+		<string>Repositories/Utils/HTTPStatusCodes.swift</string>
 		<string>Views/Storyboard.swift</string>
+		<string>ViewControllers/HomeViewController.swift</string>
 		<string>Misc/Extensions/Collection+Disposable.swift</string>
 		<string>Misc/Extensions/AppDelegate+DI.swift</string>
 		<string>Misc/Extensions/UIViewController+Storyboard.swift</string>
+		<string>Misc/Extensions/ObservableType+Filters.swift</string>
 		<string>Misc/Extensions/Swinject+Extensions.swift</string>
 		<string>DI/DIContainer.swift</string>
 		<string>DI/ViewModelAssembly.swift</string>
@@ -44,6 +47,26 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>Repositories/Utils/HTTPStatusCodes.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>HTTPStatusCodes.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Repositories</string>
+				<string>Utils</string>
+			</array>
+		</dict>
+		<key>Repositories/Utils/ApiResult.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>ApiResult.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Repositories</string>
+				<string>Utils</string>
+			</array>
+		</dict>
 		<key>Views/Storyboard.swift</key>
 		<dict>
 			<key>Path</key>
@@ -57,6 +80,16 @@
 		<dict>
 			<key>Path</key>
 			<string>Collection+Disposable.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Misc</string>
+				<string>Extensions</string>
+			</array>
+		</dict>
+		<key>Misc/Extensions/ObservableType+Filters.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>ObservableType+Filters.swift</string>
 			<key>Group</key>
 			<array>
 				<string>Misc</string>
@@ -193,6 +226,16 @@
 				<string>ViewModels</string>
 			</array>
 		</dict>
+		<key>ViewModels/Misc/LoadingViewModel.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>LoadingViewModel.swift</string>
+			<key>Group</key>
+			<array>
+				<string>ViewModels</string>
+				<string>Misc</string>
+			</array>
+		</dict>
 		<key>Services/.keep</key>
 		<dict>
 			<key>Group</key>
@@ -205,13 +248,6 @@
 			<key>Group</key>
 			<array>
 				<string>Models</string>
-			</array>
-		</dict>
-		<key>Repositories/.keep</key>
-		<dict>
-			<key>Group</key>
-			<array>
-				<string>Repositories</string>
 			</array>
 		</dict>
 		<key>Misc/Protocols/.keep</key>

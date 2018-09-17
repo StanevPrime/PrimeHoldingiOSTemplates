@@ -5,6 +5,7 @@ target '___PACKAGENAME___' do
 
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
+  pod 'RxOptional', '~> 3.5'
   pod 'Swinject', '~> 2.4'
   pod 'SwinjectStoryboard', '~> 2.0'
   pod 'SwinjectAutoregistration', '~> 2.0'
