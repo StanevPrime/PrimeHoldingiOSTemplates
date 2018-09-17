@@ -21,7 +21,6 @@
 		<string>Models/.keep</string>
 		<string>ViewModels/HomeViewModel.swift</string>
 		<string>Misc/Protocols/.keep</string>
-		<string>Misc/Extensions/.keep</string>
 		<string>Base.lproj/Main.storyboard</string>
 		<string>Info.plist:UIMainStoryboardFile</string>
 		<string>Base.lproj/LaunchScreen.storyboard</string>
@@ -124,6 +123,14 @@
 			<array>
 				<string>Misc</string>
 				<string>Extensions</string>
+			</array>
+		</dict>
+		<key>Misc/Protocols/.keep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Misc</string>
+				<string>Protocols</string>
 			</array>
 		</dict>
 		<key>DI/DIContainer.swift</key>
@@ -248,22 +255,6 @@
 			<key>Group</key>
 			<array>
 				<string>Models</string>
-			</array>
-		</dict>
-		<key>Misc/Protocols/.keep</key>
-		<dict>
-			<key>Group</key>
-			<array>
-				<string>Misc</string>
-				<string>Protocols</string>
-			</array>
-		</dict>
-		<key>Misc/Extensions/.keep</key>
-		<dict>
-			<key>Group</key>
-			<array>
-				<string>Misc</string>
-				<string>Extensions</string>
 			</array>
 		</dict>
 		<key>AppDelegate.swift</key>
