@@ -14,10 +14,11 @@ In order get your app working you should do the following steps
   1. Services
   2. Models
   3. ViewModels
-  4. Repositories
-  5. Views
-  6. ViewControllers
-  7. DI 
+  4. Misc
+  5. Repositories
+  6. Views
+  7. ViewControllers
+  8. DI 
 
 ![Alt text](Images/Step5.png?raw=true "Step 5")
 ![Alt text](Images/Step7.png?raw=true "Step 7")
