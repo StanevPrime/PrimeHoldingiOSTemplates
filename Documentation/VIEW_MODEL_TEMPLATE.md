@@ -8,14 +8,14 @@ With Prime Holding's templates you can create ViewModels with easy.
 * The template ViewModel faciliates creation as following:
 
 
-![Alt text](https://github.com/StanevPrime/PrimeHoldingiOSTemplates/blob/develop/Images/Step16.png "Step 16")
-![Alt text](https://github.com/StanevPrime/PrimeHoldingiOSTemplates/blob/develop/Images/Step17.png "Step 17")
+![Alt text](../Images/Step16.png "Step 16")
+![Alt text](../Images/Step17.png "Step 17")
 
 * So that the following ViewModel will be created
-![Alt text](https://github.com/StanevPrime/PrimeHoldingiOSTemplates/blob/develop/Images/Step12.png "Step 12")
+![Alt text](../Images/Step12.png "Step 12")
 
 
 * Add the files into DI
 
  1. You should **manually** add the ViewModel you have created in ViewModelAssembly so DI can resolve it when needed
- ![Alt text](https://github.com/StanevPrime/PrimeHoldingiOSTemplates/blob/develop/Images/Step14.png "Step 14")
+ ![Alt text](../Images/Step14.png "Step 14")
